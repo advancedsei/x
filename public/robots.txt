@@ -1,0 +1,16 @@
+# robotstxt.org/
+
+User-agent *
+Disallow: /*.gif$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /assets/
+
+User-agent Googlebot
+Disallow: /*.gif$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /assets/
+
