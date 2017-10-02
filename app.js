@@ -131,7 +131,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-server.listen(env.NODE_PORT || 3000, env.NODE_IP || '0.0.0.0', function () {
+server.listen(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080, process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0', function () {
   console.log(`Application worker ${process.pid} started...`);
 });
 
